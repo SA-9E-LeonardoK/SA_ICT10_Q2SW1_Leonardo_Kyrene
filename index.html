@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>‧₊ ♪˚⊹ ICT Seatwork 2</title>
+
+    <style>
+        body {
+            background-color: #FAF7F0;      
+            color: #4A2C1A;                 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px 15px;
+            letter-spacing: -1px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #BFE3F5;     
+            border: 3px solid #4A2C1A;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            letter-spacing: -2px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 2px solid #4A2C1A;
+            border-radius: 8px;
+            background-color: #FAF7F0;
+            color: #4A2C1A;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4A2C1A;
+            color: #FFF3B0;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6b4430;
+        }
+
+        #output1 {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #FFF3B0;      
+            border: 2px solid #4A2C1A;
+            border-radius: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #FFF3B0;      
+            border: 2px solid #4A2C1A;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>‧₊ Club Verification System ♪˚⊹ </h2>
+        <p> Write your name here!</p>
+
+        <!-- text boxes for the new member's name -->
+        <input type="text" id="first_name" placeholder="First name">
+        <input type="text" id="last_name" placeholder="Last name">
+
+        <button type="button" py-click="candidate_checker">Check Membership</button>
+
+        <!-- the result message shows here -->
+        <p id="result"></p>
+
+        <!-- the member list shows here -->
+        <div id="output1"></div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
